@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Biking Shop",
+    "slug": "biking-shop-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.liftoff.bikingshop"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#242C3B",
+        "foregroundImage": "./assets/app/android-icon-foreground.png",
+        "backgroundImage": "./assets/app/android-icon-background.png",
+        "monochromeImage": "./assets/app/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/app/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font",
+      "expo-image"
+    ],
+    "scheme": "bikingshop",
+    "backgroundColor": "#242C3B",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

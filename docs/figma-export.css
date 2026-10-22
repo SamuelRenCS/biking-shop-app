@@ -1,0 +1,5273 @@
+/* Design */
+
+box-sizing: border-box;
+
+position: relative;
+width: 2000px;
+height: 1044px;
+
+background: #444444;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 2px;
+
+/* Group 24 */
+
+position: absolute;
+width: 1800px;
+height: 844px;
+left: 100px;
+top: 100px;
+
+/* Discover  */
+
+position: absolute;
+width: 390px;
+height: 844px;
+left: 100px;
+top: 100px;
+
+background: #242c3b;
+border-radius: 50px;
+
+/* BG */
+
+position: absolute;
+width: 413.5px;
+height: 720.5px;
+left: -20px;
+top: 149px;
+
+/* Rectangle 474 */
+
+position: absolute;
+width: 413.5px;
+height: 720.5px;
+left: -20px;
+top: 149px;
+
+background: linear-gradient(170.76deg, #37b6e9 6.44%, #4b4ced 99.29%);
+
+/* Status Bar */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 8px;
+top: 0px;
+
+/* Battery */
+
+position: absolute;
+width: 24.33px;
+height: 11.33px;
+left: 336.33px;
+top: 17.33px;
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 22px;
+height: 11.33px;
+right: 16.67px;
+top: 17.33px;
+
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #ffffff;
+border-radius: 2.66667px;
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+height: 4px;
+right: 14.34px;
+top: 21px;
+
+background: #ffffff;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+/* Capacity */
+
+position: absolute;
+width: 18px;
+height: 7.33px;
+right: 18.67px;
+top: 19.33px;
+
+background: #ffffff;
+border-radius: 1.33333px;
+
+/* Wifi */
+
+position: absolute;
+width: 15.33px;
+height: 11px;
+right: 43.67px;
+top: 17.33px;
+
+background: #ffffff;
+
+/* Wifi-path */
+
+position: absolute;
+width: 15.33px;
+height: 4.76px;
+right: 43.67px;
+top: 17.33px;
+
+background: #000000;
+
+/* Wifi-path */
+
+position: absolute;
+width: 9.99px;
+height: 3.65px;
+right: 46.34px;
+top: 21.14px;
+
+background: #000000;
+
+/* Wifi-path */
+
+position: absolute;
+width: 4.64px;
+height: 3.39px;
+right: 49.01px;
+top: 24.95px;
+
+background: #000000;
+
+/* Cellular Connection */
+
+position: absolute;
+width: 17px;
+height: 10.67px;
+right: 64px;
+top: 17.67px;
+
+background: #ffffff;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 4px;
+right: 78px;
+top: 24.33px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 6px;
+right: 73.33px;
+top: 22.33px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 8.33px;
+right: 68.67px;
+top: 20px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 10.67px;
+right: 64px;
+top: 17.67px;
+
+background: #000000;
+
+/* Time Style */
+
+position: absolute;
+width: 54px;
+height: 21px;
+left: 21px;
+top: 7.33px;
+
+/* Time */
+
+position: absolute;
+width: 54px;
+height: 18px;
+left: 0px;
+top: calc(50% - 18px / 2 + 5.5px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Top Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 127px;
+
+position: absolute;
+width: 350px;
+height: 44px;
+left: 20px;
+top: 60px;
+
+/* Choose Your Bike */
+
+width: 179px;
+height: 30px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Cart Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 44px;
+height: 44px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow:
+  0px -20px 30px rgba(43, 52, 69, 0.5),
+  0px 20px 30px #10141c;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Vector */
+
+width: 20.01px;
+height: 20px;
+
+background: #fafeff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Categories */
+
+position: absolute;
+width: 330px;
+height: 90px;
+left: 30px;
+top: 368px;
+
+/* Bicycle */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 30px;
+top: 408px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow:
+  0px -20px 30px rgba(43, 52, 69, 0.5),
+  0px 20px 30px #10141c;
+border-radius: 10px;
+
+/* Rectangle 475 */
+
+position: absolute;
+visibility: hidden;
+width: 50px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+background: #d9d9d9;
+
+/* All */
+
+position: absolute;
+width: 16px;
+height: 20px;
+left: 17px;
+top: 15px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+
+color: #ffffff;
+
+/* Electric */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 100px;
+top: 398px;
+
+background: linear-gradient(169.98deg, #353f54 27.98%, #222834 81.2%);
+box-shadow:
+  0px -20px 30px rgba(43, 52, 69, 0.5),
+  0px 20px 30px #10141c;
+border-radius: 10px;
+
+/* Rectangle 475 */
+
+position: absolute;
+visibility: hidden;
+width: 50px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+background: #d9d9d9;
+
+/* Subtract */
+
+position: absolute;
+width: 36px;
+height: 24px;
+left: 7px;
+top: 13px;
+
+background: rgba(255, 255, 255, 0.6);
+
+/* Road */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 170px;
+top: 388px;
+
+background: linear-gradient(169.98deg, #353f54 27.98%, #222834 81.2%);
+box-shadow:
+  0px -20px 30px rgba(43, 52, 69, 0.5),
+  0px 20px 30px #10141c;
+border-radius: 10px;
+
+/* Rectangle 475 */
+
+position: absolute;
+visibility: hidden;
+width: 50px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+background: #d9d9d9;
+
+/* Road */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 10px;
+top: 10px;
+
+/* Union */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 10px;
+top: 10px;
+
+background: rgba(255, 255, 255, 0.6);
+
+/* Rectangle 476 */
+
+position: absolute;
+width: 1.1px;
+height: 1.19px;
+left: 24.49px;
+top: 23px;
+
+background: #000000;
+
+/* Rectangle 477 */
+
+position: absolute;
+width: 1.49px;
+height: 1.27px;
+left: 24.28px;
+top: 25.64px;
+
+background: #000000;
+
+/* Rectangle 478 */
+
+position: absolute;
+width: 2.42px;
+height: 2.29px;
+left: 23.77px;
+top: 29.12px;
+
+background: #000000;
+
+/* Rectangle 479 */
+
+position: absolute;
+width: 3.1px;
+height: 2.8px;
+left: 23.47px;
+top: 34.39px;
+
+background: #000000;
+
+/* Mountain */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 240px;
+top: 378px;
+
+background: linear-gradient(
+  167.4deg,
+  rgba(54, 62, 81, 0.6) 25.94%,
+  rgba(25, 30, 38, 0.6) 68.26%
+);
+backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Rectangle 475 */
+
+position: absolute;
+visibility: hidden;
+width: 50px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+background: #d9d9d9;
+
+/* Union */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 10px;
+top: 10px;
+
+background: rgba(255, 255, 255, 0.6);
+
+/* Accessory */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 310px;
+top: 368px;
+
+background: linear-gradient(
+  167.4deg,
+  rgba(54, 62, 81, 0.6) 25.94%,
+  rgba(25, 30, 38, 0.6) 68.26%
+);
+border-radius: 10px;
+
+/* Rectangle 475 */
+
+position: absolute;
+visibility: hidden;
+width: 50px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+background: #d9d9d9;
+
+/* Union */
+
+position: absolute;
+width: 27px;
+height: 27px;
+left: 11px;
+top: 11px;
+
+background: rgba(255, 255, 255, 0.6);
+
+/* Items */
+
+position: absolute;
+width: 350px;
+height: 734px;
+left: 20px;
+top: 442px;
+
+/* Group 23 */
+
+position: absolute;
+width: 350px;
+height: 734px;
+left: 0px;
+top: 0px;
+
+/* Items 1 */
+
+position: absolute;
+width: 165px;
+height: 235px;
+left: 0px;
+top: 31px;
+
+/* Rectangle 166 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 165px;
+height: 240px;
+left: 0px;
+top: -6px;
+
+background: linear-gradient(169.98deg, #353f54 27.98%, #222834 81.2%);
+box-shadow:
+  0px -20px 40px rgba(43, 52, 69, 0.5),
+  0px 20px 60px #10141c;
+border-radius: 20px;
+
+/* Shadow */
+
+position: absolute;
+width: 114px;
+height: 5.94px;
+left: 30px;
+top: 109px;
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 50.29px;
+height: 5.94px;
+left: 30px;
+top: 109px;
+
+background: rgba(0, 0, 0, 0.1);
+filter: blur(2.28571px);
+
+/* Ellipse 10 */
+
+position: absolute;
+width: 52.11px;
+height: 5.94px;
+left: 91.89px;
+top: 109px;
+
+background: rgba(0, 0, 0, 0.1);
+filter: blur(2.28571px);
+
+/* Ellipse 11 */
+
+position: absolute;
+visibility: hidden;
+width: 154px;
+height: 6.59px;
+left: 0px;
+top: 108.68px;
+
+background: rgba(0, 0, 0, 0.1);
+
+/* Frame 45 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 112px;
+height: 63px;
+left: 18px;
+top: 138px;
+
+/* Road Bike */
+
+width: 62px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* PEUGEOT - LR01 */
+
+width: 112px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $ 1,999.99 */
+
+width: 61px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* heart / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 125px;
+top: 16px;
+
+/* Vector */
+
+position: absolute;
+left: 8.28%;
+right: 8.4%;
+top: 13%;
+bottom: 13.09%;
+
+background: linear-gradient(144.6deg, #34cae8 -0.37%, #4e49f2 105.55%);
+
+/* robert-bye-tG36rvCeqng-unsplash-removebg-preview 4 */
+
+position: absolute;
+width: 121px;
+height: 88.57px;
+left: 22px;
+top: 32px;
+
+background: url(robert-bye-tG36rvCeqng-unsplash-removebg-preview.png);
+
+/* Rectangle 480 */
+
+position: absolute;
+width: 355px;
+height: 67.5px;
+left: 7px;
+top: -55.5px;
+
+/* Items 4 */
+
+position: absolute;
+width: 165px;
+height: 255px;
+left: 185px;
+top: 219px;
+
+/* Rectangle 166 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 165px;
+height: 255px;
+left: 185px;
+top: 219px;
+
+background: linear-gradient(
+  167.05deg,
+  rgba(54, 62, 81, 0.6) 24.24%,
+  rgba(25, 30, 38, 0.6) 67.53%
+);
+border-radius: 20px;
+
+/* Shadow */
+
+position: absolute;
+width: 144px;
+height: 5.94px;
+left: 195px;
+top: 348px;
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 50.29px;
+height: 5.94px;
+left: 195px;
+top: 348px;
+
+background: rgba(0, 0, 0, 0.1);
+filter: blur(2.28571px);
+
+/* Ellipse 10 */
+
+position: absolute;
+width: 52.11px;
+height: 5.94px;
+left: 286.89px;
+top: 348px;
+
+background: rgba(0, 0, 0, 0.1);
+filter: blur(2.28571px);
+
+/* Ellipse 11 */
+
+position: absolute;
+visibility: hidden;
+width: 154px;
+height: 6.59px;
+left: 185px;
+top: 347.68px;
+
+background: rgba(0, 0, 0, 0.1);
+
+/* Frame 45 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 129px;
+height: 63px;
+left: 195px;
+top: 377px;
+
+/* Mountain Bike */
+
+width: 89px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* PILOT - Chromoly */
+
+width: 129px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $ 1,999.99 */
+
+width: 61px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* heart / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 310px;
+top: 235px;
+
+/* Vector */
+
+position: absolute;
+left: 8.28%;
+right: 8.4%;
+top: 13%;
+bottom: 13.09%;
+
+background: #ffffff;
+
+/* mikkel-bech-yjAFnkLtKY0-unsplash-removebg-preview 2 */
+
+position: absolute;
+width: 116px;
+height: 78.88px;
+left: 208px;
+top: 271px;
+
+background: url(mikkel-bech-yjAFnkLtKY0-unsplash-removebg-preview.png);
+
+/* Items 3 */
+
+position: absolute;
+width: 165px;
+height: 219px;
+left: 185px;
+top: 0px;
+
+/* Rectangle 167 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 165px;
+height: 219px;
+left: 185px;
+top: 0px;
+
+background: linear-gradient(
+  167.4deg,
+  rgba(54, 62, 81, 0.6) 25.94%,
+  rgba(25, 30, 38, 0.6) 68.26%
+);
+border-radius: 20px;
+
+/* Frame 44 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 104px;
+height: 63px;
+left: 195px;
+top: 135px;
+
+/* Road Helmet */
+
+width: 82px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* SMITH - Trade */
+
+width: 104px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $ 120 */
+
+width: 32px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* heart / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 310px;
+top: 22px;
+
+/* Vector */
+
+position: absolute;
+left: 8.28%;
+right: 8.4%;
+top: 13%;
+bottom: 13.09%;
+
+background: #ffffff;
+
+/* Image */
+
+position: absolute;
+width: 134.64px;
+height: 104px;
+left: 195px;
+top: 22px;
+
+border-radius: 9.28571px;
+
+/* cobi-krumholz-mZKF19ydEzk-unsplash-removebg-preview 1 */
+
+position: absolute;
+width: 123.5px;
+height: 130px;
+left: 5px;
+top: -13px;
+
+background: url(cobi-krumholz-mZKF19ydEzk-unsplash-removebg-preview.png);
+
+/* Items 9 */
+
+position: absolute;
+width: 165px;
+height: 223px;
+left: 185px;
+top: 465px;
+
+/* Rectangle 167 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 165px;
+height: 223px;
+left: 185px;
+top: 465px;
+
+background: linear-gradient(
+  167.05deg,
+  rgba(54, 62, 81, 0.6) 24.24%,
+  rgba(25, 30, 38, 0.6) 67.53%
+);
+border-radius: 20px;
+
+/* Frame 44 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 107.15px;
+height: 63px;
+left: 195.45px;
+top: 615px;
+
+/* Road Helmet */
+
+width: 82px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* SMITH - Trade */
+
+width: 104px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $ 120 */
+
+width: 32px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* heart / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 310px;
+top: 481px;
+
+/* Vector */
+
+position: absolute;
+left: 8.28%;
+right: 8.4%;
+top: 13%;
+bottom: 13.09%;
+
+background: #ffffff;
+
+/* Image */
+
+position: absolute;
+width: 149.39px;
+height: 112px;
+left: 195.45px;
+top: 495px;
+
+border-radius: 10px;
+
+/* cobi-krumholz-mZKF19ydEzk-unsplash-removebg-preview 1 */
+
+position: absolute;
+width: 133px;
+height: 140px;
+left: 6px;
+top: -8px;
+
+background: url(cobi-krumholz-mZKF19ydEzk-unsplash-removebg-preview.png);
+
+/* Items 5 */
+
+position: absolute;
+width: 165px;
+height: 233px;
+left: 1px;
+top: 266px;
+
+/* Rectangle 167 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 165px;
+height: 233px;
+left: 1px;
+top: 266px;
+
+background: linear-gradient(
+  167.05deg,
+  rgba(54, 62, 81, 0.6) 24.24%,
+  rgba(25, 30, 38, 0.6) 67.53%
+);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+/* Frame 44 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 104px;
+height: 63px;
+left: 11px;
+top: 417px;
+
+/* Road Helmet */
+
+width: 82px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* SMITH - Trade */
+
+width: 104px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $ 120 */
+
+width: 32px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* heart / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 126px;
+top: 282px;
+
+/* Vector */
+
+position: absolute;
+left: 8.28%;
+right: 8.4%;
+top: 13%;
+bottom: 13.09%;
+
+background: linear-gradient(144.6deg, #34cae8 -0.37%, #4e49f2 105.55%);
+
+/* cobi-krumholz-mZKF19ydEzk-unsplash-removebg-preview 1 */
+
+position: absolute;
+width: 117.8px;
+height: 124px;
+left: 22px;
+top: 294px;
+
+background: url(cobi-krumholz-mZKF19ydEzk-unsplash-removebg-preview.png);
+
+/* Items 6 */
+
+position: absolute;
+width: 165px;
+height: 245px;
+left: 0px;
+top: 489px;
+
+/* Rectangle 166 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 165px;
+height: 245px;
+left: 0px;
+top: 489px;
+
+background: linear-gradient(
+  167.05deg,
+  rgba(54, 62, 81, 0.6) 24.24%,
+  rgba(25, 30, 38, 0.6) 67.53%
+);
+border-radius: 20px;
+
+/* Shadow */
+
+position: absolute;
+width: 114px;
+height: 5.94px;
+left: 30px;
+top: 618px;
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 50.29px;
+height: 5.94px;
+left: 30px;
+top: 618px;
+
+background: rgba(0, 0, 0, 0.1);
+filter: blur(2.28571px);
+
+/* Ellipse 10 */
+
+position: absolute;
+width: 52.11px;
+height: 5.94px;
+left: 91.89px;
+top: 618px;
+
+background: rgba(0, 0, 0, 0.1);
+filter: blur(2.28571px);
+
+/* Ellipse 11 */
+
+position: absolute;
+visibility: hidden;
+width: 154px;
+height: 6.59px;
+left: 0px;
+top: 617.68px;
+
+background: rgba(0, 0, 0, 0.1);
+
+/* Frame 45 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 129px;
+height: 63px;
+left: 18px;
+top: 661px;
+
+/* Mountain Bike */
+
+width: 89px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* PILOT - Chromoly */
+
+width: 129px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $ 1,999.99 */
+
+width: 61px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* heart / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 125px;
+top: 505px;
+
+/* Vector */
+
+position: absolute;
+left: 8.28%;
+right: 8.4%;
+top: 13%;
+bottom: 13.09%;
+
+background: #ffffff;
+
+/* Image */
+
+position: absolute;
+width: 145px;
+height: 132px;
+left: 10px;
+top: 519px;
+
+border-radius: 10px;
+
+/* robert-bye-tG36rvCeqng-unsplash-removebg-preview 4 */
+
+position: absolute;
+width: 121px;
+height: 88.57px;
+left: 12px;
+top: 22px;
+
+background: url(robert-bye-tG36rvCeqng-unsplash-removebg-preview.png);
+
+/* Top Card */
+
+position: absolute;
+width: 350px;
+height: 240px;
+left: 20px;
+top: 136px;
+
+/* mikkel-bech-yjAFnkLtKY0-unsplash-removebg-preview 5 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 350px;
+height: 240px;
+left: 20px;
+top: 136px;
+
+background: linear-gradient(
+  169.98deg,
+  rgba(53, 63, 84, 0.6) 27.98%,
+  rgba(34, 40, 52, 0.6) 81.2%
+);
+box-shadow:
+  0px -20px 60px rgba(59, 71, 95, 0.5),
+  0px 20px 60px rgba(16, 20, 28, 0.6);
+backdrop-filter: blur(50px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+/* Electric%20Bicycle.I05 2 */
+
+position: absolute;
+width: 316.82px;
+height: 153px;
+left: 37px;
+top: 166px;
+
+background: url(Carbon%20Electric%20Road%20Bike%20White.I09.2k.png);
+
+/* Frame 3657 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 101px;
+height: 39px;
+left: 36px;
+top: 313px;
+
+/* 30% Off */
+
+width: 101px;
+height: 39px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 39px;
+/* identical to box height */
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 26 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+display: none;
+width: 95px;
+height: 32px;
+
+background: linear-gradient(170.76deg, #37b6e9 6.44%, #4b4ced 99.29%);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* SEE THE BIKES */
+
+width: 75px;
+height: 17px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 16px;
+/* identical to box height */
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Tab Bar */
+
+position: absolute;
+width: 390px;
+height: 103.5px;
+left: 0px;
+top: 741px;
+
+/* Rectangle 24 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 103.5px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #363e51 -4.83%, #181c24 116.91%);
+backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+
+/* TabBar */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 390px;
+height: 83px;
+left: 0px;
+top: 20px;
+
+/* Tabs */
+
+width: 390px;
+height: 49px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 - 156.5px);
+top: 0px;
+
+/* bicycle */
+
+position: absolute;
+width: 27.39px;
+height: 17.83px;
+left: calc(50% - 27.39px / 2 + 0.2px);
+top: calc(50% - 17.83px / 2 - 5.85px);
+
+background: #ffffff;
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 - 78.5px);
+top: 0px;
+
+/* map.fill */
+
+position: absolute;
+width: 18.53px;
+height: 17.38px;
+left: calc(50% - 18.53px / 2 - 0.5px);
+top: calc(50% - 17.38px / 2 - 5.78px);
+
+background: rgba(255, 255, 255, 0.6);
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 - 0.5px);
+top: 0px;
+
+/* cart.fill */
+
+position: absolute;
+width: 20.43px;
+height: 17.53px;
+left: calc(50% - 20.43px / 2 + 0.27px);
+top: calc(50% - 17.53px / 2 - 6.2px);
+
+background: rgba(255, 255, 255, 0.6);
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 + 77.5px);
+top: 0px;
+
+/* person.fill */
+
+position: absolute;
+width: 14.85px;
+height: 15.89px;
+left: calc(50% - 14.85px / 2 + 0.5px);
+top: calc(50% - 15.89px / 2 - 5.7px);
+
+background: rgba(255, 255, 255, 0.6);
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 + 155.5px);
+top: 0px;
+
+/* doc.text.fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px / 2 + 0.5px);
+top: calc(50% - 28px / 2 - 5.5px);
+
+/* doc.text.fill */
+
+position: absolute;
+left: 23.04%;
+right: 23.04%;
+top: 14.77%;
+bottom: 17.21%;
+
+background: rgba(255, 255, 255, 0.6);
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* HomeIndicator */
+
+width: 375px;
+height: 34px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Home Indicator */
+
+position: absolute;
+width: 134px;
+height: 5px;
+left: calc(50% - 134px / 2 + 0.5px);
+bottom: 8px;
+
+background: #ffffff;
+border-radius: 100px;
+
+/* Selected Button */
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 17px;
+top: 0px;
+
+/* Rectangle 481 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 17px;
+top: 0px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow: 0px 20px 30px rgba(16, 20, 28, 0.6);
+border-radius: 10px;
+
+/* bicycle */
+
+position: absolute;
+left: 8.46%;
+right: 84.36%;
+top: 15.46%;
+bottom: 57.49%;
+
+/* bicycle */
+
+position: absolute;
+left: 0%;
+right: 2.17%;
+top: 16.92%;
+bottom: 19.39%;
+
+background: #ffffff;
+
+/* Detail */
+
+position: absolute;
+width: 390px;
+height: 844px;
+left: 570px;
+top: 100px;
+
+background: #242c3b;
+border-radius: 50px;
+
+/* Status Bar */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 8px;
+top: 0px;
+
+/* Battery */
+
+position: absolute;
+width: 24.33px;
+height: 11.33px;
+left: 336.33px;
+top: 17.33px;
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 22px;
+height: 11.33px;
+right: 16.67px;
+top: 17.33px;
+
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #ffffff;
+border-radius: 2.66667px;
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+height: 4px;
+right: 14.34px;
+top: 21px;
+
+background: #ffffff;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+/* Capacity */
+
+position: absolute;
+width: 18px;
+height: 7.33px;
+right: 18.67px;
+top: 19.33px;
+
+background: #ffffff;
+border-radius: 1.33333px;
+
+/* Wifi */
+
+position: absolute;
+width: 15.33px;
+height: 11px;
+right: 43.67px;
+top: 17.33px;
+
+background: #ffffff;
+
+/* Wifi-path */
+
+position: absolute;
+width: 15.33px;
+height: 4.76px;
+right: 43.67px;
+top: 17.33px;
+
+background: #000000;
+
+/* Wifi-path */
+
+position: absolute;
+width: 9.99px;
+height: 3.65px;
+right: 46.34px;
+top: 21.14px;
+
+background: #000000;
+
+/* Wifi-path */
+
+position: absolute;
+width: 4.64px;
+height: 3.39px;
+right: 49.01px;
+top: 24.95px;
+
+background: #000000;
+
+/* Cellular Connection */
+
+position: absolute;
+width: 17px;
+height: 10.67px;
+right: 64px;
+top: 17.67px;
+
+background: #ffffff;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 4px;
+right: 78px;
+top: 24.33px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 6px;
+right: 73.33px;
+top: 22.33px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 8.33px;
+right: 68.67px;
+top: 20px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 10.67px;
+right: 64px;
+top: 17.67px;
+
+background: #000000;
+
+/* Time Style */
+
+position: absolute;
+width: 54px;
+height: 21px;
+left: 21px;
+top: 7.33px;
+
+/* Time */
+
+position: absolute;
+width: 54px;
+height: 18px;
+left: 0px;
+top: calc(50% - 18px / 2 + 5.5px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* BG */
+
+position: absolute;
+width: 413.5px;
+height: 720.5px;
+left: 8px;
+top: -80px;
+
+/* Rectangle 475 */
+
+position: absolute;
+width: 413.5px;
+height: 720.5px;
+left: 8px;
+top: -80px;
+
+background: linear-gradient(170.76deg, #37b6e9 6.44%, #4b4ced 99.29%);
+
+/* Bottom Sheet */
+
+position: absolute;
+width: 390px;
+height: 450px;
+left: 0px;
+top: 394px;
+
+/* Rectangle 11 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 450px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(157.91deg, #353f54 0%, #222834 58.47%);
+box-shadow: 0px -20px 60px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+
+/* Categories */
+
+position: absolute;
+width: 305px;
+height: 43px;
+left: 44px;
+top: 32px;
+
+/* Categories */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 305px;
+height: 43px;
+left: 44px;
+top: 32px;
+
+/* Frame 3659 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+width: 133px;
+height: 43px;
+
+background: #323b4f;
+box-shadow:
+  -4px -4px 10px #38445a,
+  4px 4px 10px #252b39;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Description */
+
+width: 93px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.35px;
+
+background: linear-gradient(90.11deg, #3ca4eb 0.13%, #4286ee 99.94%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 3660 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+width: 142px;
+height: 43px;
+
+background: #28303f;
+box-shadow:
+  inset -4px -4px 8px #364055,
+  inset 4px 4px 8px #202633;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Specification */
+
+width: 102px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.35px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Buy Now */
+
+position: absolute;
+width: 390px;
+height: 104px;
+left: 0px;
+top: 346px;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 104px;
+left: 0px;
+top: 346px;
+
+background: #262e3d;
+box-shadow: 0px -10px 40px #1c222e;
+border-radius: 50px;
+
+/* Frame 3648 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 48px;
+
+position: absolute;
+width: 320px;
+height: 44px;
+left: 35px;
+top: 376px;
+
+/* $ 1,999.99 */
+
+width: 112px;
+height: 36px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #3d9cea;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Buy Now Button */
+
+width: 160px;
+height: 44px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Rectangle 13 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 160px;
+height: 44px;
+left: 160px;
+top: 0px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow: 0px 30px 60px #1a1f2c;
+border-radius: 10px;
+
+/* Add to Cart */
+
+position: absolute;
+width: 84px;
+height: 23px;
+left: 198px;
+top: 11px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Description */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 335px;
+height: 218px;
+left: 20px;
+top: 104px;
+
+/* PEUGEOT - LR01 */
+
+width: 128px;
+height: 26px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 26px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* The LR01 uses the same design as the most iconic bikes from PEUGEOT Cycles' 130-year history and combines it with agile, dynamic performance that's perfectly suited to navigating today's cities. As well as a lugged steel frame and iconic PEUGEOT black-and-white chequer design, this city bike also features a 16-speed Shimano Claris drivetrain. */
+
+width: 335px;
+height: 184px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Image */
+
+position: absolute;
+width: 287.73px;
+height: 222.02px;
+left: 51px;
+top: 131px;
+
+/* Dots */
+
+position: absolute;
+width: 30.48px;
+height: 5.38px;
+left: 181px;
+top: 347.64px;
+
+/* Ellipse 213 */
+
+position: absolute;
+left: 0%;
+right: 82.35%;
+top: 0%;
+bottom: 0%;
+
+background: #ffffff;
+
+/* Ellipse 214 */
+
+position: absolute;
+left: 41.18%;
+right: 41.18%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(255, 255, 255, 0.2);
+
+/* Ellipse 215 */
+
+position: absolute;
+left: 82.35%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(255, 255, 255, 0.2);
+
+/* Image */
+
+position: absolute;
+width: 287.73px;
+height: 208.41px;
+left: 51px;
+top: 131px;
+
+/* robert-bye-tG36rvCeqng-unsplash-removebg-preview 5 */
+
+position: absolute;
+width: 284.73px;
+height: 208.41px;
+left: 54px;
+top: 131px;
+
+background: url(robert-bye-tG36rvCeqng-unsplash-removebg-preview.png);
+
+/* Group 6 */
+
+position: absolute;
+width: 282.35px;
+height: 10.76px;
+left: 51px;
+top: 312.96px;
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 98.6px;
+height: 4.48px;
+left: 51px;
+top: 319.23px;
+
+background: rgba(0, 0, 0, 0.2);
+filter: blur(4.48178px);
+
+/* Ellipse 10 */
+
+position: absolute;
+width: 102.18px;
+height: 4.48px;
+left: 231.17px;
+top: 319.23px;
+
+background: rgba(0, 0, 0, 0.2);
+filter: blur(4.48178px);
+
+/* Ellipse 11 */
+
+position: absolute;
+width: 272.49px;
+height: 9.86px;
+left: 60.86px;
+top: 312.96px;
+
+background: rgba(0, 0, 0, 0.1);
+filter: blur(4.48178px);
+
+/* Top Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 56px;
+
+position: absolute;
+width: 251px;
+height: 44px;
+left: 20px;
+top: 60px;
+
+/* Frame 3650 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 44px;
+height: 44px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow:
+  0px -20px 30px rgba(43, 52, 69, 0.5),
+  0px 20px 30px #10141c;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* chevron.left */
+
+width: 28px;
+height: 28px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* chevron.left */
+
+position: absolute;
+left: 29.82%;
+right: 38.13%;
+top: 20.92%;
+bottom: 23.39%;
+
+background: #ffffff;
+
+/* PEUGEOT - LR01 */
+
+width: 151px;
+height: 30px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Shopping Bag */
+
+position: absolute;
+width: 390px;
+height: 844px;
+left: 1510px;
+top: 100px;
+
+background: #242c3b;
+border-radius: 50px;
+
+/* Status Bar */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 8px;
+top: 0px;
+
+/* Battery */
+
+position: absolute;
+width: 24.33px;
+height: 11.33px;
+left: 336.33px;
+top: 17.33px;
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 22px;
+height: 11.33px;
+right: 16.67px;
+top: 17.33px;
+
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #ffffff;
+border-radius: 2.66667px;
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+height: 4px;
+right: 14.34px;
+top: 21px;
+
+background: #ffffff;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+/* Capacity */
+
+position: absolute;
+width: 18px;
+height: 7.33px;
+right: 18.67px;
+top: 19.33px;
+
+background: #ffffff;
+border-radius: 1.33333px;
+
+/* Wifi */
+
+position: absolute;
+width: 15.33px;
+height: 11px;
+right: 43.67px;
+top: 17.33px;
+
+background: #ffffff;
+
+/* Wifi-path */
+
+position: absolute;
+width: 15.33px;
+height: 4.76px;
+right: 43.67px;
+top: 17.33px;
+
+background: #000000;
+
+/* Wifi-path */
+
+position: absolute;
+width: 9.99px;
+height: 3.65px;
+right: 46.34px;
+top: 21.14px;
+
+background: #000000;
+
+/* Wifi-path */
+
+position: absolute;
+width: 4.64px;
+height: 3.39px;
+right: 49.01px;
+top: 24.95px;
+
+background: #000000;
+
+/* Cellular Connection */
+
+position: absolute;
+width: 17px;
+height: 10.67px;
+right: 64px;
+top: 17.67px;
+
+background: #ffffff;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 4px;
+right: 78px;
+top: 24.33px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 6px;
+right: 73.33px;
+top: 22.33px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 8.33px;
+right: 68.67px;
+top: 20px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 10.67px;
+right: 64px;
+top: 17.67px;
+
+background: #000000;
+
+/* Time Style */
+
+position: absolute;
+width: 54px;
+height: 21px;
+left: 21px;
+top: 7.33px;
+
+/* Time */
+
+position: absolute;
+width: 54px;
+height: 18px;
+left: 0px;
+top: calc(50% - 18px / 2 + 5.5px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Your cart qualifies for free shipping */
+
+position: absolute;
+width: 251px;
+height: 23px;
+left: 70px;
+top: 516px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Coupon */
+
+position: absolute;
+width: 350px;
+height: 44px;
+left: 20px;
+top: 563px;
+
+/* Rectangle 27 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 350px;
+height: 44px;
+left: 0px;
+top: 0px;
+
+background: #242c3b;
+box-shadow: inset 4px 10px 30px #191e29;
+border-radius: 8px;
+
+/* Apply Button */
+
+position: absolute;
+width: 114px;
+height: 44px;
+left: 236px;
+top: 0px;
+
+/* Rectangle 28 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 114px;
+height: 44px;
+left: 236px;
+top: 0px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+border-radius: 10px;
+
+/* Apply */
+
+position: absolute;
+width: 39px;
+height: 20px;
+left: 273px;
+top: 12px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.08px;
+
+color: #ffffff;
+
+/* Bike30 */
+
+position: absolute;
+width: 42px;
+height: 20px;
+left: 12px;
+top: 12px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.08px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Frame 3676 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 199px;
+
+position: absolute;
+width: 348px;
+height: 85px;
+left: 20px;
+top: 623px;
+
+/* Frame 42 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 91px;
+height: 85px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Subtotal: */
+
+width: 66px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.87);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Delivery Fee: */
+
+width: 91px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.87);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Discount: */
+
+width: 68px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.87);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Frame 41 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+gap: 8px;
+
+width: 58px;
+height: 85px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $6119.99 */
+
+width: 58px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* $0 */
+
+width: 19px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* 30% */
+
+width: 30px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Subtotal Total */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 231px;
+
+position: absolute;
+width: 40px;
+height: 23px;
+left: 20px;
+top: 724px;
+
+/* Checkout Slide */
+
+position: absolute;
+width: 174px;
+height: 44px;
+left: 108px;
+top: 770px;
+
+/* Rectangle 28 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 174px;
+height: 44px;
+left: 108px;
+top: 770px;
+
+background: #242c3b;
+box-shadow:
+  inset -2px -2px 8px #2b3545,
+  inset 4px 4px 30px #11161e;
+border-radius: 10px;
+
+/* Checkout */
+
+position: absolute;
+width: 73px;
+height: 23px;
+left: 175px;
+top: 781px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.08px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Group 22 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 108px;
+top: 770px;
+
+/* Rectangle 29 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 108px;
+top: 770px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+border-radius: 10px;
+
+/* chevron.forward */
+
+position: absolute;
+left: 29.74%;
+right: 63.08%;
+top: 92.18%;
+bottom: 4.5%;
+
+/* chevron.forward */
+
+position: absolute;
+left: 38.13%;
+right: 29.82%;
+top: 20.92%;
+bottom: 23.39%;
+
+background: #ffffff;
+
+/* Items */
+
+position: absolute;
+width: 390px;
+height: 356px;
+left: 0px;
+top: 136px;
+
+/* Items 1 */
+
+position: absolute;
+width: 389.99px;
+height: 107.99px;
+left: 0px;
+top: 0px;
+
+/* Frame 3664 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 389.99px;
+height: 107.99px;
+left: 0px;
+top: 0px;
+
+/* Items 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 350px;
+height: 90px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Image */
+
+width: 100px;
+height: 90px;
+
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 17 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 100px;
+height: 90px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(322.57deg, #363e51 7.8%, #4c5770 91.33%);
+border-radius: 20px;
+
+/* mikkel-bech-yjAFnkLtKY0-unsplash-removebg-preview 2 */
+
+position: absolute;
+visibility: hidden;
+width: 100px;
+height: 90px;
+left: 0px;
+top: 0px;
+
+background: url(mikkel-bech-yjAFnkLtKY0-unsplash);
+
+/* robert-bye-tG36rvCeqng-unsplash-removebg-preview 6 */
+
+position: absolute;
+width: 80.61px;
+height: 59px;
+left: 10px;
+top: 15px;
+
+background: url(robert-bye-tG36rvCeqng-unsplash-removebg-preview.png);
+
+/* Frame 3663 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 234px;
+height: 77px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* PEUGEOT- LR01 */
+
+width: 109px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.87);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 3662 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 95px;
+
+width: 234px;
+height: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $ 1,999.99 */
+
+width: 60px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #3c9eea;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 3661 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 79px;
+height: 30px;
+
+background: #242c3b;
+box-shadow:
+  inset -2px -2px 4px #273041,
+  inset 2px 2px 4px #1e2531;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Plus */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 30 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 3px;
+top: 3px;
+
+background: #353f54;
+border-radius: 5px;
+
+/* Remove / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 3px;
+top: 3px;
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+background: rgba(255, 255, 255, 0.6);
+
+/* 1 */
+
+width: 5px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 7 */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Rectangle 30 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 52px;
+top: 3px;
+
+background: linear-gradient(151.1deg, #34c8e8 1.78%, #4e4af2 95.56%);
+border-radius: 5px;
+
+/* Plus / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 52px;
+top: 3px;
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+background: #ffffff;
+
+/* Separator */
+
+width: 390px;
+height: 0px;
+
+border: 0.5px solid rgba(255, 255, 255, 0.5);
+transform: rotate(0.29deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Items 2 */
+
+position: absolute;
+width: 389.99px;
+height: 107.99px;
+left: 0px;
+top: 124px;
+
+/* Image */
+
+position: absolute;
+width: 100px;
+height: 90px;
+left: 20px;
+top: 0px;
+
+border-radius: 10px;
+
+/* Rectangle 17 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 100px;
+height: 90px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(322.57deg, #363e51 7.8%, #4c5770 91.33%);
+border-radius: 20px;
+
+/* mikkel-bech-yjAFnkLtKY0-unsplash-removebg-preview 2 */
+
+position: absolute;
+visibility: hidden;
+width: 100px;
+height: 90px;
+left: 0px;
+top: 0px;
+
+background: url(mikkel-bech-yjAFnkLtKY0-unsplash);
+
+/* mikkel-bech-yjAFnkLtKY0-unsplash-removebg-preview 3 */
+
+position: absolute;
+width: 79.41px;
+height: 54px;
+left: 10px;
+top: 15.01px;
+
+background: url(mikkel-bech-yjAFnkLtKY0-unsplash-removebg-preview.png);
+
+/* PILOT - CHROMOLY 520 */
+
+position: absolute;
+width: 169px;
+height: 23px;
+left: 136px;
+top: 6.5px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.87);
+
+/* $ 3,999.99 */
+
+position: absolute;
+width: 63px;
+height: 20px;
+left: 136px;
+top: 58.5px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #3c9eea;
+
+/* Frame 3661 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 79px;
+height: 30px;
+left: 291px;
+top: 53.5px;
+
+background: #242c3b;
+box-shadow:
+  inset -2px -2px 4px #273041,
+  inset 2px 2px 4px #1e2531;
+border-radius: 8px;
+
+/* Plus */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 30 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 3px;
+top: 3px;
+
+background: #353f54;
+border-radius: 5px;
+
+/* Remove / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 3px;
+top: 3px;
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+background: rgba(255, 255, 255, 0.6);
+
+/* 1 */
+
+width: 5px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 7 */
+
+width: 24px;
+height: 24.5px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Rectangle 30 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 52px;
+top: 2.75px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+border-radius: 5px;
+
+/* Plus / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 52px;
+top: 3.25px;
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+background: #ffffff;
+
+/* Separator */
+
+position: absolute;
+width: 390px;
+height: 0px;
+left: 0px;
+top: 106px;
+
+border: 0.5px solid rgba(255, 255, 255, 0.5);
+transform: rotate(0.29deg);
+
+/* Items 3 */
+
+position: absolute;
+width: 389.99px;
+height: 107.99px;
+left: 0px;
+top: 248px;
+
+/* Frame 3674 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 389.99px;
+height: 107.99px;
+left: 0px;
+top: 0px;
+
+/* Frame 3673 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 350px;
+height: 90px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Image */
+
+width: 100px;
+height: 90px;
+
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 17 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 100px;
+height: 90px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(322.57deg, #363e51 7.8%, #4c5770 91.33%);
+border-radius: 20px;
+
+/* mikkel-bech-yjAFnkLtKY0-unsplash-removebg-preview 2 */
+
+position: absolute;
+visibility: hidden;
+width: 100px;
+height: 90px;
+left: 0px;
+top: 0px;
+
+background: url(mikkel-bech-yjAFnkLtKY0-unsplash);
+
+/* cobi-krumholz-mZKF19ydEzk-unsplash-removebg-preview 1 */
+
+position: absolute;
+width: 83px;
+height: 87.37px;
+left: 8px;
+top: 6.01px;
+
+background: url(cobi-krumholz-mZKF19ydEzk-unsplash-removebg-preview.png);
+
+/* Frame 3672 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 234px;
+height: 77px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* SMITH - Trade */
+
+width: 104px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.87);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 3671 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 124px;
+
+width: 234px;
+height: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* $ 120 */
+
+width: 31px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #3c9eea;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Add/Remove Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 79px;
+height: 30px;
+
+background: #242c3b;
+box-shadow:
+  inset -2px -2px 4px #273041,
+  inset 2px 2px 4px #1e2531;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Plus */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 30 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 3px;
+top: 3px;
+
+background: #353f54;
+border-radius: 5px;
+
+/* Remove / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 3px;
+top: 3px;
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+background: rgba(255, 255, 255, 0.6);
+
+/* 1 */
+
+width: 5px;
+height: 20px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 7 */
+
+width: 24px;
+height: 24.5px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Rectangle 30 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 52px;
+top: 2.75px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+border-radius: 5px;
+
+/* Plus / 24 / Outline */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 52px;
+top: 3.25px;
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+background: #ffffff;
+
+/* Separator */
+
+width: 390px;
+height: 0px;
+
+border: 0.5px solid rgba(255, 255, 255, 0.5);
+transform: rotate(0.29deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Top Navigation */
+
+position: absolute;
+width: 267px;
+height: 44px;
+left: 20px;
+top: 60px;
+
+/* angle-left */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 20px;
+top: 60px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow:
+  0px -20px 30px rgba(43, 52, 69, 0.5),
+  0px 20px 30px #10141c;
+border-radius: 10px;
+
+/* chevron.left */
+
+width: 28px;
+height: 28px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* chevron.left */
+
+position: absolute;
+left: 29.82%;
+right: 38.13%;
+top: 20.92%;
+bottom: 23.39%;
+
+background: #ffffff;
+
+/* My Shopping Cart */
+
+position: absolute;
+width: 180px;
+height: 30px;
+left: 107px;
+top: 65px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Tab Bar */
+
+position: absolute;
+visibility: hidden;
+width: 390px;
+height: 103.5px;
+left: 0px;
+top: 741px;
+
+/* Rectangle 24 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 103.5px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #363e51 -4.83%, #181c24 116.91%);
+backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+
+/* TabBar */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 390px;
+height: 83px;
+left: 0px;
+top: 20px;
+
+/* Tabs */
+
+width: 390px;
+height: 49px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 - 156.5px);
+top: 0px;
+
+/* bicycle */
+
+position: absolute;
+width: 27.39px;
+height: 17.83px;
+left: calc(50% - 27.39px / 2 + 0.2px);
+top: calc(50% - 17.83px / 2 - 5.85px);
+
+background: #ffffff;
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 - 78.5px);
+top: 0px;
+
+/* map.fill */
+
+position: absolute;
+width: 18.53px;
+height: 17.38px;
+left: calc(50% - 18.53px / 2 - 0.5px);
+top: calc(50% - 17.38px / 2 - 5.78px);
+
+background: rgba(255, 255, 255, 0.6);
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 - 0.5px);
+top: 0px;
+
+/* cart.fill */
+
+position: absolute;
+width: 20.43px;
+height: 17.53px;
+left: calc(50% - 20.43px / 2 + 0.27px);
+top: calc(50% - 17.53px / 2 - 6.2px);
+
+background: rgba(255, 255, 255, 0.6);
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 + 77.5px);
+top: 0px;
+
+/* person.fill */
+
+position: absolute;
+width: 14.85px;
+height: 15.89px;
+left: calc(50% - 14.85px / 2 + 0.5px);
+top: calc(50% - 15.89px / 2 - 5.7px);
+
+background: rgba(255, 255, 255, 0.6);
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* TabBar-item */
+
+position: absolute;
+width: 75px;
+height: 49px;
+left: calc(50% - 75px / 2 + 155.5px);
+top: 0px;
+
+/* doc.text.fill */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px / 2 + 0.5px);
+top: calc(50% - 28px / 2 - 5.5px);
+
+/* SF Symbol / scribble.variable */
+
+position: absolute;
+visibility: hidden;
+width: 40px;
+height: 40px;
+left: calc(50% - 40px / 2 + 0.5px);
+top: calc(50% - 40px / 2 - 5.5px);
+
+font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* ✏️ Label */
+
+position: absolute;
+visibility: hidden;
+width: 26px;
+height: 12px;
+left: calc(50% - 26px / 2 + 0.5px);
+top: calc(50% - 12px / 2 + 16.37px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.24px;
+
+/* Default/SystemBlue/Light */
+color: #007aff;
+
+/* HomeIndicator */
+
+width: 375px;
+height: 34px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Home Indicator */
+
+position: absolute;
+width: 134px;
+height: 5px;
+left: calc(50% - 134px / 2 + 0.5px);
+bottom: 8px;
+
+background: #ffffff;
+border-radius: 100px;
+
+/* Selected Button */
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 165px;
+top: 0px;
+
+/* Rectangle 481 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 165px;
+top: 0px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow: 0px 20px 30px rgba(16, 20, 28, 0.6);
+border-radius: 10px;
+
+/* bicycle */
+
+position: absolute;
+left: 46.41%;
+right: 46.41%;
+top: 15.46%;
+bottom: 57.49%;
+
+/* cart.fill */
+
+position: absolute;
+left: 14.29%;
+right: 12.77%;
+top: 17.86%;
+bottom: 19.55%;
+
+background: #ffffff;
+
+/* Subtotal Total */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 231px;
+
+position: absolute;
+width: 353px;
+height: 26px;
+left: 20px;
+top: 724px;
+
+/* Total: */
+
+width: 40px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: rgba(255, 255, 255, 0.87);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* $4,283.99 */
+
+width: 82px;
+height: 26px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 26px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #38b8ea;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Detail */
+
+position: absolute;
+width: 390px;
+height: 844px;
+left: 1040px;
+top: 100px;
+
+background: #242c3b;
+border-radius: 50px;
+
+/* Status Bar */
+
+position: absolute;
+width: 375px;
+height: 44px;
+left: 8px;
+top: 0px;
+
+/* Battery */
+
+position: absolute;
+width: 24.33px;
+height: 11.33px;
+left: 336.33px;
+top: 17.33px;
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 22px;
+height: 11.33px;
+right: 16.67px;
+top: 17.33px;
+
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #ffffff;
+border-radius: 2.66667px;
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+height: 4px;
+right: 14.34px;
+top: 21px;
+
+background: #ffffff;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+/* Capacity */
+
+position: absolute;
+width: 18px;
+height: 7.33px;
+right: 18.67px;
+top: 19.33px;
+
+background: #ffffff;
+border-radius: 1.33333px;
+
+/* Wifi */
+
+position: absolute;
+width: 15.33px;
+height: 11px;
+right: 43.67px;
+top: 17.33px;
+
+background: #ffffff;
+
+/* Wifi-path */
+
+position: absolute;
+width: 15.33px;
+height: 4.76px;
+right: 43.67px;
+top: 17.33px;
+
+background: #000000;
+
+/* Wifi-path */
+
+position: absolute;
+width: 9.99px;
+height: 3.65px;
+right: 46.34px;
+top: 21.14px;
+
+background: #000000;
+
+/* Wifi-path */
+
+position: absolute;
+width: 4.64px;
+height: 3.39px;
+right: 49.01px;
+top: 24.95px;
+
+background: #000000;
+
+/* Cellular Connection */
+
+position: absolute;
+width: 17px;
+height: 10.67px;
+right: 64px;
+top: 17.67px;
+
+background: #ffffff;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 4px;
+right: 78px;
+top: 24.33px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 6px;
+right: 73.33px;
+top: 22.33px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 8.33px;
+right: 68.67px;
+top: 20px;
+
+background: #000000;
+
+/* Cellular-Connection-path */
+
+position: absolute;
+width: 3px;
+height: 10.67px;
+right: 64px;
+top: 17.67px;
+
+background: #000000;
+
+/* Time Style */
+
+position: absolute;
+width: 54px;
+height: 21px;
+left: 21px;
+top: 7.33px;
+
+/* Time */
+
+position: absolute;
+width: 54px;
+height: 18px;
+left: 0px;
+top: calc(50% - 18px / 2 + 5.5px);
+
+font-family: "SF Pro Text";
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* BG */
+
+position: absolute;
+width: 413.5px;
+height: 720.5px;
+left: 8px;
+top: -80px;
+
+/* Rectangle 475 */
+
+position: absolute;
+width: 413.5px;
+height: 720.5px;
+left: 8px;
+top: -80px;
+
+background: linear-gradient(170.76deg, #37b6e9 6.44%, #4b4ced 99.29%);
+
+/* Bottom Sheet */
+
+position: absolute;
+width: 390px;
+height: 450px;
+left: 0px;
+top: 394px;
+
+/* Rectangle 11 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 450px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(157.91deg, #353f54 0%, #222834 58.47%);
+box-shadow: 0px -20px 60px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+
+/* Categories */
+
+position: absolute;
+width: 305px;
+height: 43px;
+left: 42px;
+top: 32px;
+
+/* Categories */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 305px;
+height: 43px;
+left: 42px;
+top: 32px;
+
+/* Frame 3660 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+width: 129px;
+height: 43px;
+
+background: #28303f;
+box-shadow:
+  inset -4px -4px 8px #364055,
+  inset 4px 4px 8px #202633;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Description */
+
+width: 89px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.35px;
+
+color: rgba(255, 255, 255, 0.6);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 3659 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+width: 146px;
+height: 43px;
+
+background: #323b4f;
+box-shadow:
+  -4px -4px 10px #38445a,
+  4px 4px 10px #252b39;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Specification */
+
+width: 106px;
+height: 23px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.35px;
+
+background: linear-gradient(90.11deg, #3ca4eb 0.13%, #4286ee 99.94%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Buy Now */
+
+position: absolute;
+width: 390px;
+height: 104px;
+left: 0px;
+top: 346px;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 104px;
+left: 0px;
+top: 346px;
+
+background: #262e3d;
+box-shadow: 0px -10px 40px #1c222e;
+border-radius: 50px;
+
+/* Frame 3648 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 48px;
+
+position: absolute;
+width: 320px;
+height: 44px;
+left: 35px;
+top: 376px;
+
+/* $ 1,999.99 */
+
+width: 112px;
+height: 36px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #3d9cea;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Buy Now Button */
+
+width: 160px;
+height: 44px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Rectangle 13 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 160px;
+height: 44px;
+left: 160px;
+top: 0px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow: 0px 30px 60px #1a1f2c;
+border-radius: 10px;
+
+/* Add to Cart */
+
+position: absolute;
+width: 84px;
+height: 23px;
+left: 198px;
+top: 11px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Description */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 335px;
+height: 218px;
+left: 27px;
+top: 102px;
+
+background: #c1c1c1;
+
+/* FREE DATA */
+
+width: 194px;
+height: 56px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 37px;
+line-height: 56px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Image */
+
+position: absolute;
+width: 287.73px;
+height: 222.02px;
+left: 51px;
+top: 131px;
+
+/* Dots */
+
+position: absolute;
+width: 30.48px;
+height: 5.38px;
+left: 181px;
+top: 347.64px;
+
+/* Ellipse 213 */
+
+position: absolute;
+left: 0%;
+right: 82.35%;
+top: 0%;
+bottom: 0%;
+
+background: #ffffff;
+
+/* Ellipse 214 */
+
+position: absolute;
+left: 41.18%;
+right: 41.18%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(255, 255, 255, 0.2);
+
+/* Ellipse 215 */
+
+position: absolute;
+left: 82.35%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(255, 255, 255, 0.2);
+
+/* Image */
+
+position: absolute;
+width: 287.73px;
+height: 208.41px;
+left: 51px;
+top: 131px;
+
+/* robert-bye-tG36rvCeqng-unsplash-removebg-preview 5 */
+
+position: absolute;
+width: 284.73px;
+height: 208.41px;
+left: 54px;
+top: 131px;
+
+background: url(robert-bye-tG36rvCeqng-unsplash-removebg-preview.png);
+
+/* Group 6 */
+
+position: absolute;
+width: 282.35px;
+height: 10.76px;
+left: 51px;
+top: 312.96px;
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 98.6px;
+height: 4.48px;
+left: 51px;
+top: 319.23px;
+
+background: rgba(0, 0, 0, 0.2);
+filter: blur(4.48178px);
+
+/* Ellipse 10 */
+
+position: absolute;
+width: 102.18px;
+height: 4.48px;
+left: 231.17px;
+top: 319.23px;
+
+background: rgba(0, 0, 0, 0.2);
+filter: blur(4.48178px);
+
+/* Ellipse 11 */
+
+position: absolute;
+width: 272.49px;
+height: 9.86px;
+left: 60.86px;
+top: 312.96px;
+
+background: rgba(0, 0, 0, 0.1);
+filter: blur(4.48178px);
+
+/* Top Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 56px;
+
+position: absolute;
+width: 251px;
+height: 44px;
+left: 20px;
+top: 60px;
+
+/* Frame 3650 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 44px;
+height: 44px;
+
+background: linear-gradient(152.72deg, #34c8e8 1.7%, #4e4af2 114.52%);
+box-shadow:
+  0px -20px 30px rgba(43, 52, 69, 0.5),
+  0px 20px 30px #10141c;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* chevron.left */
+
+width: 28px;
+height: 28px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* chevron.left */
+
+position: absolute;
+left: 29.82%;
+right: 38.13%;
+top: 20.92%;
+bottom: 23.39%;
+
+background: #ffffff;
+
+/* PEUGEOT - LR01 */
+
+width: 151px;
+height: 30px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+letter-spacing: -0.3px;
+
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
