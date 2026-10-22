@@ -3,11 +3,11 @@ import { Image } from "expo-image";
 import { useMemo } from "react";
 import { Pressable, Text, View } from "react-native";
 
-import { HeartIcon, HeartLikedIcon } from "@/components/ui/icons";
+import { HeartButton } from "@/components/ui/HeartButton";
 import { BackdropBehind } from "@/components/ui/DiagonalBackdrop";
 import { SkewedSurface, type EdgeHighlight, type Point } from "@/components/ui/SkewedSurface";
 import type { Product } from "@/data/products";
-import { colors, gradients, shadows } from "@/theme";
+import { gradients, shadows } from "@/theme";
 import { formatPrice } from "@/utils/format";
 
 import type { CardFrame, DiscoverLayout } from "./layout";
@@ -49,7 +49,6 @@ const TEMPLATES: Record<Product["kind"], Template> = {
 
 type Props = {
   product: Product;
-  liked: boolean;
   frame: CardFrame;
   layout: DiscoverLayout;
   contentWidth: number;
@@ -57,7 +56,7 @@ type Props = {
   onPress: () => void;
 };
 
-export function ProductCard({ product, liked, frame, layout, contentWidth, contentHeight, onPress }: Props) {
+export function ProductCard({ product, frame, layout, contentWidth, contentHeight, onPress }: Props) {
   const { x, y, width, height, slant, scale: k, overBackdrop: glass } = frame;
   const template = TEMPLATES[product.kind];
   const points = useMemo<Point[]>(
@@ -93,9 +92,6 @@ export function ProductCard({ product, liked, frame, layout, contentWidth, conte
         backdropBlur={glass ? 20 : 0}
         decorations={product.kind === "bike" ? <ContactShadow k={k} /> : undefined}
       >
-        <View className="absolute h-6 w-6 items-center justify-center" style={{ left: 125 * k, top: 22 * k }}>
-          {liked ? <HeartLikedIcon width={20} height={18} /> : <HeartIcon width={20} height={18} color={colors.white} />}
-        </View>
         <View
           className="absolute overflow-hidden"
           style={{
@@ -125,6 +121,7 @@ export function ProductCard({ product, liked, frame, layout, contentWidth, conte
           </Text>
           <Text className="font-poppins-medium text-caption text-text-muted">{formatPrice(product.price)}</Text>
         </View>
+        <HeartButton productId={product.id} style={{ position: "absolute", left: 125 * k, top: 22 * k }} />
       </SkewedSurface>
     </Pressable>
   );

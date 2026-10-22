@@ -13,7 +13,11 @@ import type { ProductKind } from "@/data/products";
  */
 
 export type Frame = { x: number; y: number; width: number; height: number };
-export type CardFrame = Frame & { slant: number; scale: number; overBackdrop: boolean };
+export type CardFrame = Frame & {
+  slant: number;
+  scale: number;
+  overBackdrop: boolean;
+};
 
 const GUTTER = 20;
 const COLUMN_GAP = 20;
@@ -24,26 +28,43 @@ const CHIP_COUNT = 5;
 /** Card bounding heights in Figma: bike cards 240, accessory cards 219 (both 165 wide). */
 const CARD_HEIGHT: Record<ProductKind, number> = { bike: 240, accessory: 219 };
 
-export function discoverLayout(width: number, topInset: number, kinds: ProductKind[]) {
+export function discoverLayout(
+  width: number,
+  topInset: number,
+  kinds: ProductKind[],
+) {
   const s = width / designFrame.width;
 
   const header = { y: topInset + 16, height: 44 };
 
   const heroY = header.y + header.height + 32;
-  const hero = { x: GUTTER, y: heroY, width: width - GUTTER * 2, height: 240 * s, slant: 40 * s };
+  const hero = {
+    x: GUTTER,
+    y: heroY,
+    width: width - GUTTER * 2,
+    height: 240 * s,
+    slant: 40 * s,
+  };
 
   // The backdrop's left edge falls 0.625pt left for every 1pt down (about 32° from vertical). Its
   // top corner sits 54pt below the hero top and 20pt in from the right edge (Figma 370, 190).
   const backdrop: BackdropGeometry = {
-    vertexX: 370 * s,
-    vertexY: heroY + 54 * s,
-    run: 0.625,
+    vertexX: 310 * s,
+    vertexY: heroY + 36 * s,
+    run: 0.475,
     cornerRadius: 24 * s,
     // Figma layer bounds: 413.5 × 720.5 at (-20, 149), with the corner at y 190.
-    gradientBox: { x: -20 * s, y: heroY + 13 * s, width: 413.5 * s, height: 720.5 * s },
+    gradientBox: {
+      x: -20 * s,
+      y: heroY + 13 * s,
+      width: 413.5 * s,
+      height: 720.5 * s,
+    },
   };
-  const edgeX = (y: number) => backdrop.vertexX - backdrop.run * (y - backdrop.vertexY);
-  const isOverBackdrop = (x: number, y: number) => y > backdrop.vertexY && x > edgeX(y);
+  const edgeX = (y: number) =>
+    backdrop.vertexX - backdrop.run * (y - backdrop.vertexY);
+  const isOverBackdrop = (x: number, y: number) =>
+    y > backdrop.vertexY && x > edgeX(y);
 
   // Chips rise 10pt per step to the right, following the hero's slanted bottom edge.
   const chipsTop = hero.y + hero.height - 8 * s;
@@ -55,7 +76,13 @@ export function discoverLayout(width: number, topInset: number, kinds: ProductKi
       width: CHIP_SIZE,
       height: CHIP_SIZE,
     };
-    return { ...frame, overBackdrop: isOverBackdrop(frame.x + CHIP_SIZE / 2, frame.y + CHIP_SIZE / 2) };
+    return {
+      ...frame,
+      overBackdrop: isOverBackdrop(
+        frame.x + CHIP_SIZE / 2,
+        frame.y + CHIP_SIZE / 2,
+      ),
+    };
   });
 
   // Two staggered columns; the left starts 25pt lower. Cards stack edge to edge by bounding box,
@@ -78,7 +105,10 @@ export function discoverLayout(width: number, topInset: number, kinds: ProductKi
     columnBottoms[column] += height;
     return {
       ...frame,
-      overBackdrop: isOverBackdrop(frame.x + frame.width / 2, frame.y + frame.height / 2),
+      overBackdrop: isOverBackdrop(
+        frame.x + frame.width / 2,
+        frame.y + frame.height / 2,
+      ),
     };
   });
 

@@ -79,8 +79,7 @@ export const heroPromo = {
 /**
  * Discover grid. Each product appears once (Figma repeats cards to fill the frame). The grid
  * fills left/right columns alternately, so these are left, right, left, right. The first two
- * match the design's first viewport. Heart state is static mock data (favourites are out of
- * scope).
+ * match the design's first viewport. `liked` seeds the in-memory favourites (state/favorites).
  */
 export const discoverFeed: { productId: string; liked: boolean }[] = [
   { productId: "peugeot-lr01", liked: true },

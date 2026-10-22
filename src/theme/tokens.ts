@@ -25,7 +25,12 @@ export const colors = {
   white: "#FFFFFF",
   textHigh: "rgba(255, 255, 255, 0.87)",
   textMuted: "rgba(255, 255, 255, 0.6)",
-  separator: "rgba(255, 255, 255, 0.5)",
+  /** Cart row divider. The CSS says 0.5px of 50% white, but Figma renders a faint #2D374A line. */
+  separator: "#2D374A",
+  /** Order total (Shopping Cart). */
+  totalText: "#38B8EA",
+  /** Not in the design: inline promo-code error. A soft red that reads on the dark surfaces. */
+  danger: "#FF7B7B",
   iconOn: "#FAFEFF",
 } as const;
 
@@ -90,16 +95,18 @@ export const shadows = {
     { x: -4, y: -4, blur: 8, color: "#364055", inset: true },
     { x: 4, y: 4, blur: 8, color: "#202633", inset: true },
   ],
-  /** Cart stepper "−" and promo field wells. */
+  /** Cart quantity stepper well. */
   well: [
     { x: -2, y: -2, blur: 4, color: "#273041", inset: true },
     { x: 2, y: 2, blur: 4, color: "#1E2531", inset: true },
   ],
-  wellDeep: [
+  /** Promo code field. */
+  inputWell: [{ x: 4, y: 10, blur: 30, color: "#191E29", inset: true }],
+  /** Checkout slide track. */
+  checkoutTrack: [
     { x: -2, y: -2, blur: 8, color: "#2B3545", inset: true },
     { x: 4, y: 4, blur: 30, color: "#11161E", inset: true },
   ],
-  checkoutTrack: [{ x: 4, y: 10, blur: 30, color: "#191E29", inset: true }],
 } satisfies Record<string, ShadowToken[]>;
 
 export const radii = {

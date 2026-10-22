@@ -13,6 +13,9 @@ const TRANSITION = { duration: 260, easing: Easing.inOut(Easing.quad) };
 type Props = {
   selected: boolean;
   onPress?: () => void;
+  onPressIn?: () => void;
+  onPressOut?: () => void;
+  disabled?: boolean;
   /** Surface when not selected: gradient, shadow, radius. */
   idleStyle: StyleProp<ViewStyle>;
   /** Surface when selected. Crossfaded over the idle surface. */
@@ -42,6 +45,9 @@ type Props = {
 export function SkeuoButton({
   selected,
   onPress,
+  onPressIn,
+  onPressOut,
+  disabled,
   idleStyle,
   selectedStyle,
   idleContentOpacity = 0.6,
@@ -67,8 +73,11 @@ export function SkeuoButton({
   return (
     <Pressable
       onPress={onPress}
+      onPressIn={onPressIn}
+      onPressOut={onPressOut}
+      disabled={disabled}
       accessibilityRole="button"
-      accessibilityState={{ selected }}
+      accessibilityState={{ selected, disabled }}
       accessibilityLabel={accessibilityLabel}
       style={[styles.base, style]}
     >

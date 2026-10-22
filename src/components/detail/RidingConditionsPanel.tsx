@@ -3,6 +3,7 @@ import { Text, View } from "react-native";
 
 import { RIDING_LOCATION, rideVerdict, type RideVerdict, type RidingConditions } from "@/api/openMeteo";
 import { AccentButton } from "@/components/ui/AccentButton";
+import { Well } from "@/components/ui/Well";
 import { useRidingConditions } from "@/hooks/useRidingConditions";
 import { colors, cssShadow, radii, shadows } from "@/theme";
 
@@ -25,11 +26,11 @@ export function RidingConditionsPanel() {
   const { state, retry } = useRidingConditions();
 
   return (
-    <View className="mx-[27px] p-4" style={[well, { height: 218 }]}>
+    <Well className="mx-[27px] p-4" style={{ height: 218 }} surface={well}>
       {state.status === "success" && <Conditions data={state.data} />}
       {state.status === "loading" && <Loading />}
       {state.status === "error" && <ErrorState onRetry={retry} />}
-    </View>
+    </Well>
   );
 }
 

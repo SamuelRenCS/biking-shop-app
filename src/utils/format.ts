@@ -7,3 +7,8 @@ export function formatPrice(amount: number): string {
   });
   return `$ ${value}`;
 }
+
+/** "$6,119.98" / "$0": totals in the cart summary (no space after the sign, as in Figma). */
+export function formatMoney(amount: number): string {
+  return formatPrice(amount).replace("$ ", "$");
+}

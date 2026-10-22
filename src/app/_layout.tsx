@@ -12,6 +12,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import { SlideStack } from "@/navigation/SlideStack";
 import { CartProvider } from "@/state/cart";
+import { FavoritesProvider } from "@/state/favorites";
 import { colors } from "@/theme";
 
 export default function RootLayout() {
@@ -21,7 +22,9 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.bg }}>
       <StatusBar style="light" />
       {/* The app background matches the splash colour, so holding render until fonts load shows no flash. */}
-      <CartProvider>{fontsLoaded && <SlideStack />}</CartProvider>
+      <CartProvider>
+        <FavoritesProvider>{fontsLoaded && <SlideStack />}</FavoritesProvider>
+      </CartProvider>
     </GestureHandlerRootView>
   );
 }

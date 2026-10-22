@@ -42,7 +42,6 @@ export default function DiscoverScreen() {
         <ProductCard
           key={entry.productId}
           product={entry.product}
-          liked={entry.liked}
           frame={layout.cards[i]}
           layout={layout}
           contentWidth={width}

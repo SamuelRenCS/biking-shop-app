@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import type { PressableProps, StyleProp, ViewStyle } from "react-native";
 
-import { cssGradient, cssShadow, gradients, radii, shadows, type ShadowToken } from "@/theme";
+import { cssGradient, cssShadow, gradients, radii, shadows, type LinearGradientToken, type ShadowToken } from "@/theme";
 
 import { PressableScale } from "./PressableScale";
 
@@ -11,6 +11,7 @@ type Props = Omit<PressableProps, "style" | "children"> & {
   width?: number;
   height?: number;
   radius?: number;
+  gradient?: LinearGradientToken;
   shadow?: readonly ShadowToken[];
   style?: StyleProp<ViewStyle>;
   children: ReactNode;
@@ -22,6 +23,7 @@ export function AccentButton({
   width = size,
   height = size,
   radius = radii.md,
+  gradient = gradients.accent,
   shadow = shadows.raised,
   style,
   children,
@@ -38,8 +40,8 @@ export function AccentButton({
           borderRadius: radius,
           alignItems: "center",
           justifyContent: "center",
-          backgroundImage: cssGradient(gradients.accent),
-          boxShadow: cssShadow(shadow),
+          backgroundImage: cssGradient(gradient),
+          boxShadow: shadow.length ? cssShadow(shadow) : undefined,
         },
         style,
       ]}

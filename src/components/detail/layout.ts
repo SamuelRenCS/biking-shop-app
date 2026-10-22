@@ -15,12 +15,17 @@ const CAROUSEL_DESIGN_HEIGHT = 290; // header bottom (104) to sheet top (394)
 const SHEET_DESIGN_HEIGHT = 450;
 const DESIGN_HOME_INDICATOR = 34;
 
-export function detailLayout(width: number, height: number, insets: EdgeInsets) {
+export function detailLayout(
+  width: number,
+  height: number,
+  insets: EdgeInsets,
+) {
   const s = width / designFrame.width;
   const dy = insets.top - designFrame.statusBar;
 
   const headerBottom = insets.top + 16 + 44;
-  const sheetHeight = SHEET_DESIGN_HEIGHT + (insets.bottom - DESIGN_HOME_INDICATOR);
+  const sheetHeight =
+    SHEET_DESIGN_HEIGHT + (insets.bottom - DESIGN_HOME_INDICATOR);
   const sheetTop = height - sheetHeight;
 
   const region = sheetTop - headerBottom;
@@ -37,13 +42,14 @@ export function detailLayout(width: number, height: number, insets: EdgeInsets) 
     scale: v,
   };
   const dotsY = blockTop + 243.64 * v;
+  const lift = 50;
 
   // Here the panel's long edge runs 0.486pt left per 1pt down (about 26° from vertical), entering
   // at the top near x 316 and passing behind the bike's rear wheel.
   const backdrop: BackdropGeometry = {
-    vertexX: 316 * s,
-    vertexY: -4 + dy,
-    run: 0.486,
+    vertexX: 316 * s + 0.475 * lift,
+    vertexY: -4 + dy - lift,
+    run: 0.475,
     cornerRadius: 24 * s,
     gradientBox: { x: 8 * s, y: -80 + dy, width: 413.5 * s, height: 720.5 * s },
   };
