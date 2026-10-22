@@ -83,7 +83,14 @@ export const shadows = {
   /** Selected tab-bar tile. */
   floating: [{ x: 0, y: 20, blur: 30, color: "rgba(16, 20, 28, 0.6)" }],
   sheet: [{ x: 0, y: -20, blur: 60, color: "rgba(0, 0, 0, 0.25)" }],
-  bottomBar: [{ x: 0, y: -10, blur: 40, color: "#1C222E" }],
+  /**
+   * Detail purchase bar. The inset line is the light rim along its rounded top that the design
+   * renders (the CSS export leaves it out); it follows the curve and fades down the corners.
+   */
+  bottomBar: [
+    { x: 0, y: -10, blur: 40, color: "#1C222E" },
+    { x: 0, y: 1, blur: 0, color: "rgba(255, 255, 255, 0.05)", inset: true },
+  ],
   ctaButton: [{ x: 0, y: 30, blur: 60, color: "#1A1F2C" }],
   /** Skeuomorphic pill, raised (Detail segmented tabs). */
   neuRaised: [

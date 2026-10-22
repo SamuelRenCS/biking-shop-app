@@ -1,5 +1,6 @@
 import { router } from "expo-router";
 import type { BottomTabBarProps } from "expo-router/js-tabs";
+import { Line, LinearGradient, vec } from "@shopify/react-native-skia";
 import { useEffect, useMemo, useRef, type FC } from "react";
 import { Pressable, StyleSheet, useWindowDimensions, View } from "react-native";
 import Animated, {
@@ -77,6 +78,7 @@ const GLIDE = { duration: 300, easing: Easing.out(Easing.cubic) };
 const FADE = { duration: 220, easing: Easing.out(Easing.quad) };
 const LEAN_DEG = 5;
 const PRESS_SCALE = 0.92;
+const INACTIVE_ICON_OPACITY = 0.6;
 
 export function TabBar({ state, emitter, navigateToTab }: BottomTabBarProps) {
   const { width } = useWindowDimensions();
@@ -154,7 +156,14 @@ export function TabBar({ state, emitter, navigateToTab }: BottomTabBarProps) {
 
   return (
     <View style={[styles.container, { height }]}>
-      <SkewedSurface width={width} height={height} points={barPoints} radius={0} fill={gradients.tabBar} />
+      <SkewedSurface
+        width={width}
+        height={height}
+        points={barPoints}
+        radius={0}
+        fill={gradients.tabBar}
+        decorations={<TopRim width={width} />}
+      />
 
       {/* Muted icons in the bar; each fades out while the tile covers its slot. */}
       {ITEMS.map((item, i) => (
@@ -201,6 +210,23 @@ export function TabBar({ state, emitter, navigateToTab }: BottomTabBarProps) {
   );
 }
 
+/**
+ * The light rim along the bar's slanted top edge, as rendered in the design (not in the CSS
+ * export): a 2pt line just inside the edge, brightest on the right and fading out to the left.
+ */
+function TopRim({ width }: { width: number }) {
+  return (
+    <Line p1={vec(0, SLANT + 1)} p2={vec(width, 1)} strokeWidth={2}>
+      <LinearGradient
+        start={vec(0, 0)}
+        end={vec(width, 0)}
+        colors={["rgba(255,255,255,0)", "rgba(255,255,255,0.015)", "rgba(255,255,255,0.06)"]}
+        positions={[0.25, 0.5, 0.8]}
+      />
+    </Line>
+  );
+}
+
 function useCrossfade(active: boolean) {
   const progress = useSharedValue(active ? 1 : 0);
   useEffect(() => {
@@ -211,7 +237,9 @@ function useCrossfade(active: boolean) {
 
 function SlotIcon({ item, active, centerX }: { item: TabItem; active: boolean; centerX: number }) {
   const progress = useCrossfade(active);
-  const style = useAnimatedStyle(() => ({ opacity: 1 - progress.value }));
+  // Figma's inactive icons are white at 60%. react-native-svg drops the alpha of an rgba
+  // `currentColor`, so the 60% goes on the view's opacity instead.
+  const style = useAnimatedStyle(() => ({ opacity: INACTIVE_ICON_OPACITY * (1 - progress.value) }));
   return (
     <Animated.View
       pointerEvents="none"
@@ -220,7 +248,7 @@ function SlotIcon({ item, active, centerX }: { item: TabItem; active: boolean; c
         style,
       ]}
     >
-      <item.Icon width={item.width} height={item.height} color={colors.textMuted} />
+      <item.Icon width={item.width} height={item.height} color={colors.white} />
     </Animated.View>
   );
 }

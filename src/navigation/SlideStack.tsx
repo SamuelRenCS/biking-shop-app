@@ -17,6 +17,7 @@ import { GestureDetector, usePanGesture } from "react-native-gesture-handler";
 import Animated, {
   Easing,
   useAnimatedStyle,
+  useFrameCallback,
   useSharedValue,
   withTiming,
 } from "react-native-reanimated";
@@ -37,7 +38,14 @@ import { colors } from "@/theme";
  * `closing` and rendered until its exit animation finishes.
  */
 
-const TRANSITION = { duration: 350, easing: Easing.out(Easing.cubic) };
+// A gentle start and long, smooth deceleration (CSS "ease"), close to the native iOS push. An
+// ease-out curve front-loads the motion: about 45% of the distance in the first frames, so the
+// screen seemed to pop in rather than slide.
+const EASE = [0.25, 0.1, 0.25, 1] as const;
+const TRANSITION = { duration: 380, easing: Easing.bezier(...EASE) };
+const enterEasing = Easing.bezierFn(...EASE);
+// The entrance advances at most one frame's worth of time per frame (see SlideScreen).
+const MAX_FRAME_MS = 1000 / 60;
 const EDGE_WIDTH = 30;
 
 type SlideStackOptions = Record<string, never>;
@@ -141,8 +149,29 @@ function SlideScreen({ animateIn, closing, canSwipeBack, onSwipeBack, onClosed, 
   const [notifyClosed] = useState(() => () => callbacks.current.onClosed());
   const [notifySwipedBack] = useState(() => () => callbacks.current.onSwipeBack());
 
+  // The entrance is driven frame by frame on the UI thread instead of by a clock. A new screen's
+  // first frame (Skia canvases, images) can take ~60ms to draw; a time-based animation would
+  // skip that stretch and the screen would jump in part-way. Capping each step at one frame means
+  // a slow frame delays the slide instead of skipping it. It starts as soon as the screen lays
+  // out, without waiting for the (still busy) JS thread.
+  const enterElapsed = useSharedValue(0);
+  const [stopEnter] = useState(() => () => enterFrames.setActive(false));
+  const enterFrames = useFrameCallback((frame) => {
+    enterElapsed.value += Math.min(frame.timeSincePreviousFrame ?? 0, MAX_FRAME_MS);
+    const t = Math.min(1, enterElapsed.value / TRANSITION.duration);
+    progress.value = enterEasing(t);
+    if (t >= 1) scheduleOnRN(stopEnter);
+  }, false);
+  const enterStarted = useRef(false);
+  const startEnter = () => {
+    if (!animateIn || enterStarted.current) return;
+    enterStarted.current = true;
+    enterFrames.setActive(true);
+  };
   useEffect(() => {
-    if (animateIn) progress.value = withTiming(1, TRANSITION);
+    // Safety net in case onLayout never fires (e.g. an unchanged layout).
+    const fallback = setTimeout(startEnter, 250);
+    return () => clearTimeout(fallback);
     // Only on mount: whether to animate in is decided once.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -177,7 +206,11 @@ function SlideScreen({ animateIn, closing, canSwipeBack, onSwipeBack, onClosed, 
 
   return (
     <GestureDetector gesture={swipeBack}>
-      <Animated.View style={[styles.screen, slide]} pointerEvents={closing ? "none" : "auto"}>
+      <Animated.View
+        style={[styles.screen, slide]}
+        pointerEvents={closing ? "none" : "auto"}
+        onLayout={startEnter}
+      >
         {children}
       </Animated.View>
     </GestureDetector>

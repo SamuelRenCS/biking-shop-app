@@ -34,7 +34,8 @@ export function QuantityStepper({ quantity, onChange, label }: Props) {
         accessibilityLabel={quantity === 1 ? `Remove ${label}` : `Decrease ${label}`}
         style={{ width: 24, height: 24 }}
       >
-        <RemoveIcon width={16} height={2} color={colors.textMuted} />
+        {/* White at 60% as in Figma (react-native-svg ignores an rgba currentColor's alpha). */}
+        <RemoveIcon width={16} height={2} color={colors.white} opacity={0.6} />
       </SkeuoButton>
       <Text className="min-w-[5px] text-center font-poppins-semibold text-caption text-text-muted">{quantity}</Text>
       <AccentButton
