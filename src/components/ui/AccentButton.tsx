@@ -6,16 +6,21 @@ import { cssGradient, cssShadow, gradients, radii, shadows, type ShadowToken } f
 import { PressableScale } from "./PressableScale";
 
 type Props = Omit<PressableProps, "style" | "children"> & {
+  /** Square size; `width`/`height` override it for rectangular buttons. */
   size?: number;
+  width?: number;
+  height?: number;
   radius?: number;
   shadow?: readonly ShadowToken[];
   style?: StyleProp<ViewStyle>;
   children: ReactNode;
 };
 
-/** Square accent-gradient icon button (search, back, cart "+"). Shrinks on press. */
+/** Accent-gradient button (search, back, cart "+", Add to Cart). Shrinks on press. */
 export function AccentButton({
   size = 44,
+  width = size,
+  height = size,
   radius = radii.md,
   shadow = shadows.raised,
   style,
@@ -28,8 +33,8 @@ export function AccentButton({
       {...rest}
       style={[
         {
-          width: size,
-          height: size,
+          width,
+          height,
           borderRadius: radius,
           alignItems: "center",
           justifyContent: "center",

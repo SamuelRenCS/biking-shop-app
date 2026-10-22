@@ -4,12 +4,12 @@ import { useMemo } from "react";
 import { Pressable, Text, View } from "react-native";
 
 import { HeartIcon, HeartLikedIcon } from "@/components/ui/icons";
+import { BackdropBehind } from "@/components/ui/DiagonalBackdrop";
 import { SkewedSurface, type EdgeHighlight, type Point } from "@/components/ui/SkewedSurface";
 import type { Product } from "@/data/products";
 import { colors, gradients, shadows } from "@/theme";
 import { formatPrice } from "@/utils/format";
 
-import { BackdropBehind } from "./DiagonalBackdrop";
 import type { CardFrame, DiscoverLayout } from "./layout";
 
 // From item_card.svg: white fading to transparent by 84%, 20% opacity, 2pt inside the edge.
@@ -25,14 +25,27 @@ const HIGHLIGHT: EdgeHighlight = {
   opacity: 0.2,
 };
 
+type Box = { x: number; y: number; width: number; height: number };
+type Template = { frame: Box & { radius: number }; image: Box; text: { x: number; y: number } };
+
 /**
  * Content placement per card type, in Figma pt on a 165-wide card. Figma itself is inconsistent
  * between cards, so the two cards in the first viewport (Peugeot, Smith helmet) set the template.
+ * `image` is relative to `frame`, which clips it. The helmet overflows its frame in Figma, which
+ * is why its straps are cut off.
  */
-const TEMPLATES = {
-  bike: { image: { x: 22, y: 38, width: 121, height: 88.57 }, text: { x: 18, y: 144 } },
-  accessory: { image: { x: 10, y: 22, width: 134.64, height: 104 }, text: { x: 10, y: 135 } },
-} as const;
+const TEMPLATES: Record<Product["kind"], Template> = {
+  bike: {
+    frame: { x: 22, y: 38, width: 121, height: 88.57, radius: 0 },
+    image: { x: 0, y: 0, width: 121, height: 88.57 },
+    text: { x: 18, y: 144 },
+  },
+  accessory: {
+    frame: { x: 10, y: 22, width: 134.64, height: 104, radius: 9.29 },
+    image: { x: 5, y: -13, width: 123.5, height: 130 },
+    text: { x: 10, y: 135 },
+  },
+};
 
 type Props = {
   product: Product;
@@ -74,7 +87,7 @@ export function ProductCard({ product, liked, frame, layout, contentWidth, conte
         highlight={HIGHLIGHT}
         backdrop={
           glass ? (
-            <BackdropBehind layout={layout} width={contentWidth} height={contentHeight} x={x} y={y} />
+            <BackdropBehind geometry={layout.backdrop} width={contentWidth} height={contentHeight} x={x} y={y} />
           ) : undefined
         }
         backdropBlur={glass ? 20 : 0}
@@ -83,17 +96,28 @@ export function ProductCard({ product, liked, frame, layout, contentWidth, conte
         <View className="absolute h-6 w-6 items-center justify-center" style={{ left: 125 * k, top: 22 * k }}>
           {liked ? <HeartLikedIcon width={20} height={18} /> : <HeartIcon width={20} height={18} color={colors.white} />}
         </View>
-        <Image
-          source={product.image}
-          contentFit="contain"
+        <View
+          className="absolute overflow-hidden"
           style={{
-            position: "absolute",
-            left: template.image.x * k,
-            top: template.image.y * k,
-            width: template.image.width * k,
-            height: template.image.height * k,
+            left: template.frame.x * k,
+            top: template.frame.y * k,
+            width: template.frame.width * k,
+            height: template.frame.height * k,
+            borderRadius: template.frame.radius * k,
           }}
-        />
+        >
+          <Image
+            source={product.image}
+            contentFit="contain"
+            style={{
+              position: "absolute",
+              left: template.image.x * k,
+              top: template.image.y * k,
+              width: template.image.width * k,
+              height: template.image.height * k,
+            }}
+          />
+        </View>
         <View className="absolute" style={{ left: template.text.x * k, top: template.text.y * k, right: 10 * k }}>
           <Text className="font-poppins-medium text-caption text-text-muted">{product.category}</Text>
           <Text className="font-poppins-bold text-body text-white" numberOfLines={1}>

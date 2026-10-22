@@ -1,3 +1,4 @@
+import type { BackdropGeometry } from "@/components/ui/DiagonalBackdrop";
 import { designFrame } from "@/theme";
 import type { ProductKind } from "@/data/products";
 
@@ -33,7 +34,14 @@ export function discoverLayout(width: number, topInset: number, kinds: ProductKi
 
   // The backdrop's left edge falls 0.625pt left for every 1pt down (about 32° from vertical). Its
   // top corner sits 54pt below the hero top and 20pt in from the right edge (Figma 370, 190).
-  const backdrop = { vertexX: 370 * s, vertexY: heroY + 54 * s, run: 0.625, cornerRadius: 24 * s };
+  const backdrop: BackdropGeometry = {
+    vertexX: 370 * s,
+    vertexY: heroY + 54 * s,
+    run: 0.625,
+    cornerRadius: 24 * s,
+    // Figma layer bounds: 413.5 × 720.5 at (-20, 149), with the corner at y 190.
+    gradientBox: { x: -20 * s, y: heroY + 13 * s, width: 413.5 * s, height: 720.5 * s },
+  };
   const edgeX = (y: number) => backdrop.vertexX - backdrop.run * (y - backdrop.vertexY);
   const isOverBackdrop = (x: number, y: number) => y > backdrop.vertexY && x > edgeX(y);
 

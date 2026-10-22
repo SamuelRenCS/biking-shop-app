@@ -15,11 +15,24 @@ export type Product = {
 
 const images = {
   peugeot: require("@assets/images/products/peugeot-lr01.png"),
-  smith: require("@assets/images/products/smith-trade.png"),
-  heroEbike: require("@assets/images/products/hero-ebike.png"),
+  pilot: require("@assets/images/products/black_pilot.png"),
+  helmet: require("@assets/images/products/helmet.png"),
+  carbonE1: require("@assets/images/products/carbon-e1.png"), // trimmed to the bike
+  heroEbike: require("@assets/images/products/hero-ebike.png"), // Figma's hero framing
 };
 
 export const products: Record<string, Product> = {
+  // The hero's 30%-off bike. Figma gives it no name, price or copy, so these are placeholders.
+  "carbon-e1": {
+    id: "carbon-e1",
+    kind: "bike",
+    category: "Electric Bike",
+    name: "CARBON - E1",
+    price: 2799.99, // 30% off 3,999.99
+    image: images.carbonE1,
+    description:
+      "The E1 hides its motor and battery inside a one-piece carbon frame, so it rides and looks like a lightweight road bike until you need the boost. Up to 90 km of assist, a belt drive that never needs oil, and integrated lights make it an effortless daily commuter.",
+  },
   "peugeot-lr01": {
     id: "peugeot-lr01",
     kind: "bike",
@@ -38,10 +51,10 @@ export const products: Record<string, Product> = {
     shortName: "PILOT - Chromoly",
     // Discover shows $1,999.99 (a copy-paste in Figma); the cart's $3,999.99 is what the totals use.
     price: 3999.99,
-    // TODO(assets): the black Pilot bike photo isn't in the repo yet; Figma itself uses the
-    // Peugeot photo for one of the Pilot cards, so it stands in until the export arrives.
-    image: images.peugeot,
-    description: "",
+    image: images.pilot,
+    // Not in the design: placeholder copy in the same voice as the Peugeot description.
+    description:
+      "The Chromoly 520 pairs a lightweight, double-butted chromoly steel frame with a carbon fork for a ride that is stiff where it counts and forgiving on rough tarmac. Deep-section rims, internal cable routing and a 22-speed groupset make it equally at home on fast group rides and long solo climbs.",
   },
   "smith-trade": {
     id: "smith-trade",
@@ -49,27 +62,29 @@ export const products: Record<string, Product> = {
     category: "Road Helmet",
     name: "SMITH - Trade",
     price: 120,
-    // TODO(assets): matted from the @2x Discover render; replace with the original transparent PNG.
-    image: images.smith,
-    description: "",
+    image: images.helmet,
+    // Not in the design: placeholder copy in the same voice as the Peugeot description.
+    description:
+      "The Trade is a road helmet built around comfort on long days in the saddle. Wide vents keep air moving at any speed, the in-mould shell keeps weight down, and a dial-adjust fit system with a removable, washable liner holds it securely in place without pressure points.",
   },
 };
 
+/** The promoted product in the Discover hero card. */
 export const heroPromo = {
+  productId: "carbon-e1",
   image: images.heroEbike,
   label: "30% Off",
 };
 
 /**
- * Discover grid, in Figma's order. The grid fills left/right columns alternately, so these are
- * left, right, left, right, ... Figma repeats the three products; the heart state is static
- * mock data (favourites are out of scope).
+ * Discover grid. Each product appears once (Figma repeats cards to fill the frame). The grid
+ * fills left/right columns alternately, so these are left, right, left, right. The first two
+ * match the design's first viewport. Heart state is static mock data (favourites are out of
+ * scope).
  */
 export const discoverFeed: { productId: string; liked: boolean }[] = [
   { productId: "peugeot-lr01", liked: true },
   { productId: "smith-trade", liked: false },
-  { productId: "smith-trade", liked: true },
+  { productId: "carbon-e1", liked: false },
   { productId: "pilot-chromoly-520", liked: false },
-  { productId: "pilot-chromoly-520", liked: false },
-  { productId: "smith-trade", liked: false },
 ];

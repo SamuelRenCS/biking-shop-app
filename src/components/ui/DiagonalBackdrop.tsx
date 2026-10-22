@@ -2,24 +2,33 @@ import { Canvas, Group, LinearGradient, Path, Rect } from "@shopify/react-native
 import { useMemo } from "react";
 import { StyleSheet } from "react-native";
 
-import { roundedPolygon } from "@/components/ui/SkewedSurface";
 import { colors, gradients } from "@/theme";
 import { skiaGradient } from "@/theme/skia";
 
-import type { DiscoverLayout } from "./layout";
+import { roundedPolygon } from "./SkewedSurface";
 
-const OVERSCAN = 2000; // keeps the shape filled during overscroll bounce
-
-type Props = { layout: DiscoverLayout; width: number; height: number };
+const OVERSCAN = 2000; // keeps the shape filled past the edges (overscroll bounce, blur sampling)
 
 /**
- * The dark page with the blue diagonal panel, as Skia nodes in screen-content coordinates.
- * It is drawn once behind the scroll content, and glass surfaces draw it again (offset and
- * blurred) to imitate `backdrop-filter`.
+ * The blue panel from Figma ("BG", a rotated rectangle). Each screen rotates and places it
+ * differently, so callers describe it by its top corner and the slope of its long left edge.
  */
-export function DiagonalBackdropNodes({ layout, width, height }: Props) {
-  const { vertexX, vertexY, run, cornerRadius } = layout.backdrop;
-  const s = layout.scale;
+export type BackdropGeometry = {
+  /** Top corner of the panel. */
+  vertexX: number;
+  vertexY: number;
+  /** How far the long left edge moves left for every 1pt down. */
+  run: number;
+  cornerRadius: number;
+  /** Box the CSS gradient is laid out over (Figma's 413.5 × 720.5 layer bounds). */
+  gradientBox: { x: number; y: number; width: number; height: number };
+};
+
+type Props = { geometry: BackdropGeometry; width: number; height: number };
+
+/** The dark page with the blue diagonal panel, as Skia nodes in screen-content coordinates. */
+export function DiagonalBackdropNodes({ geometry, width, height }: Props) {
+  const { vertexX, vertexY, run, cornerRadius, gradientBox } = geometry;
 
   const path = useMemo(() => {
     const bottom = height + OVERSCAN;
@@ -36,9 +45,6 @@ export function DiagonalBackdropNodes({ layout, width, height }: Props) {
     );
   }, [vertexX, vertexY, run, cornerRadius, width, height]);
 
-  // Figma's gradient box for the panel: 413.5 × 720.5 starting 20pt left of the frame.
-  const gradientBox = { x: -20 * s, y: vertexY - 41 * s, width: 413.5 * s, height: 720.5 * s };
-
   return (
     <Group>
       <Rect x={-OVERSCAN} y={-OVERSCAN} width={width + OVERSCAN * 2} height={height + OVERSCAN * 2} color={colors.bg} />
@@ -49,7 +55,7 @@ export function DiagonalBackdropNodes({ layout, width, height }: Props) {
   );
 }
 
-/** Full-size backdrop canvas, placed behind the Discover scroll content. */
+/** Full-size backdrop canvas, placed behind a screen's content. */
 export function DiagonalBackdrop(props: Props) {
   return (
     <Canvas pointerEvents="none" style={[StyleSheet.absoluteFill, { height: props.height }]}>
@@ -58,7 +64,10 @@ export function DiagonalBackdrop(props: Props) {
   );
 }
 
-/** The backdrop translated into a child surface's local coordinates. */
+/**
+ * The backdrop translated into a child surface's local coordinates, so a glass surface can draw
+ * (and blur) exactly what is behind it.
+ */
 export function BackdropBehind({ x, y, ...props }: Props & { x: number; y: number }) {
   return (
     <Group transform={[{ translateX: -x }, { translateY: -y }]}>

@@ -11,6 +11,7 @@ import { StatusBar } from "expo-status-bar";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import { SlideStack } from "@/navigation/SlideStack";
+import { CartProvider } from "@/state/cart";
 import { colors } from "@/theme";
 
 export default function RootLayout() {
@@ -20,7 +21,7 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.bg }}>
       <StatusBar style="light" />
       {/* The app background matches the splash colour, so holding render until fonts load shows no flash. */}
-      {fontsLoaded && <SlideStack />}
+      <CartProvider>{fontsLoaded && <SlideStack />}</CartProvider>
     </GestureHandlerRootView>
   );
 }

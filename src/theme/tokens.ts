@@ -118,12 +118,16 @@ export const fonts = {
   bold: "Poppins_700Bold",
 } as const;
 
-/** [fontSize, lineHeight, letterSpacing] in pt. Weight is chosen separately via the font family. */
+/**
+ * [fontSize, lineHeight, letterSpacing] in pt. Weight is chosen separately via the font family.
+ * Figma sets Poppins at 150% line height; the CSS export rounds it (22.5 → 22, 19.5 → 20), which
+ * drifts by ~0.5pt per line in long copy, so the exact values are used here.
+ */
 export const typeScale = {
-  micro: [11, 16, 0],
-  caption: [13, 20, -0.3],
-  body: [15, 22, -0.3],
-  heading: [17, 26, -0.3],
+  micro: [11, 16.5, 0],
+  caption: [13, 19.5, -0.3],
+  body: [15, 22.5, -0.3],
+  heading: [17, 25.5, -0.3],
   title: [20, 30, -0.3],
   price: [24, 36, -0.3],
   promo: [26, 39, 0],

@@ -1,12 +1,12 @@
 import { Image } from "expo-image";
 import { useMemo } from "react";
-import { Text } from "react-native";
+import { Pressable, Text } from "react-native";
 
+import { BackdropBehind } from "@/components/ui/DiagonalBackdrop";
 import { SkewedSurface, type EdgeHighlight, type Point } from "@/components/ui/SkewedSurface";
-import { heroPromo } from "@/data/products";
+import { heroPromo, products } from "@/data/products";
 import { gradients, shadows } from "@/theme";
 
-import { BackdropBehind } from "./DiagonalBackdrop";
 import type { DiscoverLayout } from "./layout";
 
 // From top_card.svg: a white-to-transparent inner hairline at 20% opacity, running top-left to
@@ -22,11 +22,12 @@ const HIGHLIGHT: EdgeHighlight = {
   opacity: 0.2,
 };
 
-type Props = { layout: DiscoverLayout; contentWidth: number; contentHeight: number };
+type Props = { layout: DiscoverLayout; contentWidth: number; contentHeight: number; onPress: () => void };
 
 /** Glass promo card: flat top, bottom edge rising to the right, blurred backdrop showing through. */
-export function HeroCard({ layout, contentWidth, contentHeight }: Props) {
+export function HeroCard({ layout, contentWidth, contentHeight, onPress }: Props) {
   const { x, y, width, height, slant } = layout.hero;
+  const product = products[heroPromo.productId];
   const s = layout.scale;
   const points = useMemo<Point[]>(
     () => [
@@ -39,29 +40,35 @@ export function HeroCard({ layout, contentWidth, contentHeight }: Props) {
   );
 
   return (
-    <SkewedSurface
+    <Pressable
+      onPress={onPress}
+      accessibilityRole="button"
+      accessibilityLabel={`${product.name}, ${heroPromo.label}`}
       style={{ position: "absolute", left: x, top: y }}
-      width={width}
-      height={height}
-      points={points}
-      radius={20 * s}
-      fill={gradients.hero}
-      shadows={shadows.hero}
-      highlight={HIGHLIGHT}
-      backdrop={<BackdropBehind layout={layout} width={contentWidth} height={contentHeight} x={x} y={y} />}
-      backdropBlur={50}
     >
-      <Image
-        source={heroPromo.image}
-        contentFit="contain"
-        style={{ position: "absolute", left: 17 * s, top: 30 * s, width: 316.82 * s, height: 153 * s }}
-      />
-      <Text
-        className="absolute font-poppins-bold text-promo text-text-muted"
-        style={{ left: 16, top: 177 * s }}
+      <SkewedSurface
+        width={width}
+        height={height}
+        points={points}
+        radius={20 * s}
+        fill={gradients.hero}
+        shadows={shadows.hero}
+        highlight={HIGHLIGHT}
+        backdrop={<BackdropBehind geometry={layout.backdrop} width={contentWidth} height={contentHeight} x={x} y={y} />}
+        backdropBlur={50}
       >
-        {heroPromo.label}
-      </Text>
-    </SkewedSurface>
+        <Image
+          source={heroPromo.image}
+          contentFit="contain"
+          style={{ position: "absolute", left: 17 * s, top: 30 * s, width: 316.82 * s, height: 153 * s }}
+        />
+        <Text
+          className="absolute font-poppins-bold text-promo text-text-muted"
+          style={{ left: 16, top: 177 * s }}
+        >
+          {heroPromo.label}
+        </Text>
+      </SkewedSurface>
+    </Pressable>
   );
 }

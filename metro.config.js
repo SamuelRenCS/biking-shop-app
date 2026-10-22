@@ -10,4 +10,6 @@ config.transformer.babelTransformerPath = require.resolve(
 config.resolver.assetExts = config.resolver.assetExts.filter((ext) => ext !== "svg");
 config.resolver.sourceExts = [...config.resolver.sourceExts, "svg"];
 
-module.exports = withNativeWind(config, { input: "./src/global.css" });
+// inlineRem 16 makes Tailwind's spacing scale match Figma pt (NativeWind defaults to 14, which
+// would render `p-4` as 14pt instead of 16).
+module.exports = withNativeWind(config, { input: "./src/global.css", inlineRem: 16 });
